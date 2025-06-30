@@ -2,8 +2,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kotesh Yelamati | Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .section-title { font-weight: bold; margin-bottom: 1rem; }
+    .badge { margin-right: 5px; }
+    body.dark-theme {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
   <script>
-    // Dark/light mode toggle
     function toggleTheme() {
       const body = document.body;
       body.classList.toggle("dark-theme");
@@ -15,233 +33,75 @@
       }
     };
   </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-    .dark-theme {
-      background-color: #121212;
-      color: #f1f1f1;
-    }
-    .dark-theme .section-title,
-    .dark-theme .timeline h5,
-    .dark-theme .badge {
-      color: #f1f1f1;
-    }
-    .dark-theme .hero {
-      background: linear-gradient(to right, #141e30, #243b55);
-    }
-    .dark-theme .bg-light {
-      background-color: #1e1e1e !important;
-    }
-    .dark-theme .bg-white {
-      background-color: #2a2a2a !important;
-    }
-    .dark-theme .footer {
-      background-color: #111 !important;
-    }
-  </style>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kotesh Yelamati | SDET Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; background: #f8f9fc; }
-    .hero { background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: white; padding: 60px 0; text-align: center; }
-    .section { padding: 60px 20px; }
-    .section-title { font-size: 2rem; font-weight: 600; margin-bottom: 30px; color: #343a40; }
-    .timeline { border-left: 4px solid #007bff; margin-left: 20px; padding-left: 20px; }
-    .timeline-item { margin-bottom: 20px; }
-    .badge { background: #17a2b8; }
-    .footer { background: #343a40; color: white; text-align: center; padding: 20px 0; margin-top: 40px; }
-  </style>
 </head>
 <body>
   <button class="btn btn-outline-secondary theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
 
-<header class="hero">
-  <div class="container">
-    <h1>Kotesh Yelamati</h1>
-    <p class="lead">SDET | Automation | Python | Playwright | AWS | CI/CD</p>
-    <a href="https://github.com/koteshyelamati" class="btn btn-outline-light m-2"><i class="fab fa-github"></i> GitHub</a>
-    <a href="https://www.linkedin.com/in/koteshyelamati/" class="btn btn-outline-light m-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="Kotesh_Yelamati_SDET.pdf" class="btn btn-success m-2" download><i class="fas fa-file-download"></i> Resume</a>
-  </div>
-</header>
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>Hi, I’m <strong>Kotesh Kumar Yelamati</strong> — a Software Development Engineer with a Master’s in Data Analytics and hands-on experience in software development, automated testing, and cloud-based delivery pipelines.</p>
+      <p><strong>I specialize in:</strong></p>
+      <ul>
+        <li>Building end-to-end test automation using Playwright, PyTest, and Postman</li>
+        <li>Designing and deploying CI/CD pipelines with GitHub Actions, Jenkins, and Docker</li>
+        <li>Developing scalable, secure applications and test suites for REST APIs, microservices, and modern web apps</li>
+        <li>Collaborating in Agile/Scrum teams to continuously deliver high-quality software</li>
+        <li>Debugging, profiling, and optimizing code and test flows for performance and reliability</li>
+      </ul>
+      <p>My work includes building robust QA automation frameworks, writing efficient and modular backend/frontend code, deploying cloud-native solutions, and even publishing an IEEE paper on machine learning for medical diagnosis.</p>
+      <p>I’m passionate about delivering reliable and scalable software systems — and I’m actively looking for full-time roles in Software Development, QA Automation, or SDET tracks.</p>
+      <p><strong>Let’s connect if you're hiring or working on cutting-edge software solutions!</strong></p>
+    </div>
+  </section>
 
-
-<section class="section bg-light">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-    <p>Hi, I’m <strong>Kotesh Kumar Yelamati</strong> — a Software Development Engineer with a Master’s in Data Analytics and hands-on experience in software development, automated testing, and cloud-based delivery pipelines.</p>
-    <p><strong>I specialize in:</strong></p>
-    <ul>
-      <li>Building end-to-end test automation using Playwright, PyTest, and Postman</li>
-      <li>Designing and deploying CI/CD pipelines with GitHub Actions, Jenkins, and Docker</li>
-      <li>Developing scalable, secure applications and test suites for REST APIs, microservices, and modern web apps</li>
-      <li>Collaborating in Agile/Scrum teams to continuously deliver high-quality software</li>
-      <li>Debugging, profiling, and optimizing code and test flows for performance and reliability</li>
-    </ul>
-    <p>My work includes building robust QA automation frameworks, writing efficient and modular backend/frontend code, deploying cloud-native solutions, and even publishing an IEEE paper on machine learning for medical diagnosis.</p>
-    <p>I’m passionate about delivering reliable and scalable software systems — and I’m actively looking for full-time roles in Software Development, QA Automation, or SDET tracks.</p>
-    <p><strong>Let’s connect if you're hiring or working on cutting-edge software solutions!</strong></p>
-  </div>
-</section>
-
-
-<section class="section bg-white">
-  <div class="container">
-    <h2 class="section-title">Project Gallery</h2>
-    <div class="row">
-      <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Software Solutions Design</h5>
-            <p class="card-text">Built Microservices using Spring Boot and RESTful APIs. Developed frontend with HTML, CSS, JS, Redux, and ReactJS hosted on AWS.</p>
+  <section class="section bg-white">
+    <div class="container">
+      <h2 class="section-title">Project Gallery</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Software Solutions Design</h5>
+              <p class="card-text">Built Microservices using Spring Boot and RESTful APIs. Developed frontend with HTML, CSS, JS, Redux, and ReactJS hosted on AWS.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Task Management Web App</h5>
-            <p class="card-text">React.js + Node.js + MongoDB with TDD using Mocha/Chai. Tested REST APIs with Postman and validated UI using Jest.</p>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Task Management Web App</h5>
+              <p class="card-text">React.js + Node.js + MongoDB with TDD using Mocha/Chai. Tested REST APIs with Postman and validated UI using Jest.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Fake News Classifier</h5>
-            <p class="card-text">Flask web app using TF-IDF & SVM. Tested with PyTest for logic and Postman for API and input validation.</p>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Fake News Classifier</h5>
+              <p class="card-text">Flask web app using TF-IDF & SVM. Tested with PyTest for logic and Postman for API and input validation.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">CI/CD Deployment Pipeline</h5>
-            <p class="card-text">Automated with Jenkins, Docker, GitHub Actions. PyTest integration, build/test alerts and status badges.</p>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">CI/CD Deployment Pipeline</h5>
+              <p class="card-text">Automated with Jenkins, Docker, GitHub Actions. PyTest integration, build/test alerts and status badges.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-12 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Full-Stack Web App (Django + Angular)</h5>
-            <p class="card-text">Single-page app with Angular frontend and Django backend with REST API testing. Deployed on AWS EC2 with secure endpoint setup.</p>
+        <div class="col-md-12 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Full-Stack Web App (Django + Angular)</h5>
+              <p class="card-text">Single-page app with Angular frontend and Django backend with REST API testing. Deployed on AWS EC2 with secure endpoint setup.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="section bg-white">
-  <div class="container">
-    <h2 class="section-title">Experience Timeline</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h5>SDET Intern – Sree Tech Solutions (Nov 2021 – Apr 2022)</h5>
-        <p>Automated test suites using PyTest & Playwright, integrated CI/CD pipelines with GitHub Actions, and validated REST APIs for AWS Lambda apps.</p>
-      </div>
-      <div class="timeline-item">
-        <h5>QA Engineer – Tata Power Solar Systems (Jun 2018 – Jun 2019)</h5>
-        <p>Led PLC-level system troubleshooting and QA documentation for automated PV lines. Skills in debugging and automation translated to software QA discipline.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section bg-light">
-  <div class="container">
-    <h2 class="section-title">Certifications</h2>
-    <ul>
-      <li>Introduction to Cloud – IBM Developer Skills Network</li>
-      <li>Prompt Engineering for Everyone – IBM Developer Skills Network</li>
-      <li>SQL and Relational Databases 101 – IBM Developer Skills Network</li>
-      <li>R for Data Science – IBM Developer Skills Network</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section bg-white">
-  <div class="container">
-    <h2 class="section-title">Publication</h2>
-    <p><strong>IEEE Paper:</strong> <em>Lung Cancer Identification System Using Novel KNN</em></p>
-    <p>Developed and tested a machine learning pipeline to identify lung cancer with improved precision compared to logistic regression.</p>
-    <a href="https://doi.org/10.1109/ICECONF57129.2023.10084340" target="_blank">Read Publication</a>
-  </div>
-</section>
-
-<section class="section bg-light">
-  <div class="container">
-    <h2 class="section-title">Education</h2>
-    <ul>
-      <li><strong>Master's in Data Analytics</strong> – Indiana Wesleyan University (2023–2025)</li>
-      <li><strong>Bachelor's in Electronics & Communication</strong> – SSE (GPA: 7.4/10)</li>
-    </ul>
-  </div>
-</section>
-
-
-<section class="section bg-light">
-  <div class="container">
-    <h2 class="section-title">Tools & Technologies</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <h5><span class="badge bg-primary">Languages & Scripting</span></h5>
-        <ul>
-          <li>Python, JavaScript, Bash, SQL</li>
-        </ul>
-        <h5><span class="badge bg-primary">Automation & Testing Tools</span></h5>
-        <ul>
-          <li>Playwright, PyTest, Selenium, Postman, JMeter</li>
-        </ul>
-        <h5><span class="badge bg-primary">Cloud Platforms</span></h5>
-        <ul>
-          <li>AWS (EC2, S3, Lambda), Azure (ADF, Synapse, Data Lake)</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <h5><span class="badge bg-primary">DevOps & CI/CD</span></h5>
-        <ul>
-          <li>GitHub Actions, Jenkins, Docker, Kubernetes, Terraform</li>
-        </ul>
-        <h5><span class="badge bg-primary">Frameworks & Libraries</span></h5>
-        <ul>
-          <li>React, Node.js, Django, Flask, Pandas, NumPy</li>
-        </ul>
-        <h5><span class="badge bg-primary">Databases & Storage</span></h5>
-        <ul>
-          <li>MongoDB, PostgreSQL, MySQL, Snowflake, HDFS, Hive</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <div class="row text-center">
-      <div class="col-md-4"><span class="badge">Testing:</span> PyTest, Selenium, Playwright, JMeter, Postman</div>
-      <div class="col-md-4"><span class="badge">Cloud:</span> AWS (EC2, S3, Lambda), Azure</div>
-      <div class="col-md-4"><span class="badge">DevOps:</span> Jenkins, Docker, GitHub Actions, Kubernetes</div>
-      <div class="col-md-4"><span class="badge">Languages:</span> Python, JavaScript, SQL, Bash</div>
-      <div class="col-md-4"><span class="badge">Frontend/Backend:</span> React, Node.js, Django, Flask</div>
-      <div class="col-md-4"><span class="badge">Databases:</span> MongoDB, PostgreSQL, MySQL, Redshift</div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    &copy; 2025 Kotesh Yelamati. All rights reserved.
-  </div>
-</footer>
+  </section>
 
 </body>
 </html>
