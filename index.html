@@ -3,23 +3,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kotesh Yelamati | Portfolio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <style>
-    html { scroll-behavior: smooth; }
-    .section-title { font-weight: bold; margin-bottom: 1rem; }
-    .badge { margin-right: 5px; }
-    body.dark-theme {
-      background-color: #121212;
-      color: #f1f1f1;
-    }
-    .theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; scroll-behavior: smooth; }
+    header, section { padding: 40px 20px; }
+    header { background: #007bff; color: white; text-align: center; }
+    nav { background: #343a40; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section h2 { border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+    .block { background: white; margin: 20px auto; padding: 20px; width: 90%; max-width: 900px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    footer { text-align: center; padding: 20px; background: #343a40; color: white; }
+    button.theme-toggle { position: fixed; top: 10px; right: 10px; padding: 10px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    .dark-theme { background-color: #121212; color: #ddd; }
+    .dark-theme .block { background-color: #1e1e1e; color: #ccc; }
   </style>
   <script>
     function toggleTheme() {
@@ -35,73 +32,94 @@
   </script>
 </head>
 <body>
-  <button class="btn btn-outline-secondary theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
 
-  <section class="section bg-light">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p>Hi, I’m <strong>Kotesh Kumar Yelamati</strong> — a Software Development Engineer with a Master’s in Data Analytics and hands-on experience in software development, automated testing, and cloud-based delivery pipelines.</p>
-      <p><strong>I specialize in:</strong></p>
-      <ul>
-        <li>Building end-to-end test automation using Playwright, PyTest, and Postman</li>
-        <li>Designing and deploying CI/CD pipelines with GitHub Actions, Jenkins, and Docker</li>
-        <li>Developing scalable, secure applications and test suites for REST APIs, microservices, and modern web apps</li>
-        <li>Collaborating in Agile/Scrum teams to continuously deliver high-quality software</li>
-        <li>Debugging, profiling, and optimizing code and test flows for performance and reliability</li>
-      </ul>
-      <p>My work includes building robust QA automation frameworks, writing efficient and modular backend/frontend code, deploying cloud-native solutions, and even publishing an IEEE paper on machine learning for medical diagnosis.</p>
-      <p>I’m passionate about delivering reliable and scalable software systems — and I’m actively looking for full-time roles in Software Development, QA Automation, or SDET tracks.</p>
-      <p><strong>Let’s connect if you're hiring or working on cutting-edge software solutions!</strong></p>
-    </div>
-  </section>
+<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
 
-  <section class="section bg-white">
-    <div class="container">
-      <h2 class="section-title">Project Gallery</h2>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Software Solutions Design</h5>
-              <p class="card-text">Built Microservices using Spring Boot and RESTful APIs. Developed frontend with HTML, CSS, JS, Redux, and ReactJS hosted on AWS.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Task Management Web App</h5>
-              <p class="card-text">React.js + Node.js + MongoDB with TDD using Mocha/Chai. Tested REST APIs with Postman and validated UI using Jest.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Fake News Classifier</h5>
-              <p class="card-text">Flask web app using TF-IDF & SVM. Tested with PyTest for logic and Postman for API and input validation.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">CI/CD Deployment Pipeline</h5>
-              <p class="card-text">Automated with Jenkins, Docker, GitHub Actions. PyTest integration, build/test alerts and status badges.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Full-Stack Web App (Django + Angular)</h5>
-              <p class="card-text">Single-page app with Angular frontend and Django backend with REST API testing. Deployed on AWS EC2 with secure endpoint setup.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<header>
+  <h1>Kotesh Kumar Yelamati</h1>
+  <p>SDET | Test Automation | Python | AWS | CI/CD | Full-Stack QA</p>
+  <p>
+    <a href="https://github.com/koteshyelamati" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/koteshyelamati/" target="_blank">LinkedIn</a> |
+    <a href="resume.pdf" download>Download Resume</a>
+  </p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#tools">Tools</a>
+  <a href="#education">Education</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#publications">Publications</a>
+  <a href="#experience">Experience</a>
+</nav>
+
+<section id="about" class="block">
+  <h2>About Me</h2>
+  <p>Hi, I’m <strong>Kotesh Kumar Yelamati</strong> — a Software Development Engineer with a Master’s in Data Analytics and hands-on experience in automated testing, full-stack development, and CI/CD pipelines across cloud environments.</p>
+  <ul>
+    <li>Test automation using Playwright, PyTest, Postman</li>
+    <li>CI/CD integration with Jenkins, GitHub Actions, Docker</li>
+    <li>REST API and UI testing for scalable web apps</li>
+    <li>Collaborative Agile/Scrum experience</li>
+    <li>IEEE-published researcher in machine learning for healthcare</li>
+  </ul>
+</section>
+
+<section id="projects" class="block">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>Software Solutions Design:</strong> Microservices + ReactJS hosted on AWS | <a href="https://github.com/koteshyelamati/Software-Solutions-Design" target="_blank">GitHub</a></li>
+    <li><strong>Task Management Web App:</strong> TDD using Mocha/Chai + Jest | <a href="https://github.com/koteshyelamati/Task-Manager-QA-MERN" target="_blank">GitHub</a></li>
+    <li><strong>Fake News Classifier:</strong> Flask + TF-IDF + PyTest | <a href="https://github.com/koteshyelamati/Fake-News-Classifier" target="_blank">GitHub</a></li>
+    <li><strong>CI/CD Pipeline:</strong> Jenkins, Docker, GitHub Actions + PyTest | <a href="https://github.com/koteshyelamati/CI-CD-Test-Automation" target="_blank">GitHub</a></li>
+    <li><strong>Full-Stack Web App:</strong> Django + Angular + AWS EC2 | <a href="https://github.com/koteshyelamati/Django-Angular-QA" target="_blank">GitHub</a></li>
+  </ul>
+</section>
+
+<section id="tools" class="block">
+  <h2>Tools & Technologies</h2>
+  <p><strong>Languages:</strong> Python, JavaScript, SQL, Bash</p>
+  <p><strong>Automation:</strong> Playwright, PyTest, Selenium, Postman</p>
+  <p><strong>Cloud:</strong> AWS (EC2, S3, Lambda), Azure (ADF, Synapse)</p>
+  <p><strong>DevOps:</strong> Jenkins, GitHub Actions, Docker, Kubernetes</p>
+  <p><strong>Frameworks:</strong> React, Node.js, Django, Flask</p>
+  <p><strong>Databases:</strong> MongoDB, MySQL, Snowflake, HDFS</p>
+</section>
+
+<section id="education" class="block">
+  <h2>Education</h2>
+  <p><strong>Master’s in Data Analytics</strong> – Indiana Wesleyan University, USA (2023–2025)</p>
+  <p><strong>Bachelor’s in Electronics & Communication Engineering</strong> – SSE (GPA: 7.4/10)</p>
+</section>
+
+<section id="certifications" class="block">
+  <h2>Certifications</h2>
+  <ul>
+    <li>IBM Data Science Professional Certificate</li>
+    <li>AWS Certified Cloud Practitioner</li>
+    <li>Microsoft Azure Fundamentals (AZ-900)</li>
+  </ul>
+</section>
+
+<section id="publications" class="block">
+  <h2>Publications</h2>
+  <p><strong>IEEE Paper:</strong> "Lung Cancer Identification System to Improve Accuracy Using Novel KNN vs Logistic Regression"</p>
+  <p>Published in IEEE Xplore, 2021 | DOI: <a href="https://ieeexplore.ieee.org/document/9442075" target="_blank">10.1109/ICSCAN53069.2021.9442075</a></p>
+</section>
+
+<section id="experience" class="block">
+  <h2>Experience Timeline</h2>
+  <ul>
+    <li><strong>Sree Tech Solutions – Python Developer Intern</strong> (2023)</li>
+    <li><strong>Tata Power DDL – SCADA Engineer</strong> (2020–2021)</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Kotesh Yelamati. All rights reserved.
+</footer>
 
 </body>
 </html>
